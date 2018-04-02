@@ -42,7 +42,7 @@ class Blockchain{
 			let previousBlock = this.getLatestBlock();
 			newBlock.index = previousBlock.index + 1;
 			newBlock.previousHash = previousBlock.hash;
-      newBlock.mineBlock(this.pow);
+      newBlock.mineBlock(this.pow); 
 		}
 		this.chain.push(newBlock);
 	}
